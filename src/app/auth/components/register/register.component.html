@@ -1,0 +1,38 @@
+<div class="auth-page">
+  <div class="container-page ">
+    <div class="row min-h-screen flex items-center justify-center">
+      <div class="w-full md:w-6/12 mx-auto">
+        <h1 class="text-center text-emerald-500 text-5xl ">Sign Up</h1>
+        <p class="text-center mt-6">
+          <a routerLink="/login">Have an Account?</a>
+        </p>
+        BACKEND ERRORS
+        <form (ngSubmit)="onSubmit()" [formGroup]="form" class="space-y-10">
+          <fieldset class="form-group">
+            <input class="form-control w-full py-3 px-4 text-lg border border-gray-300 rounded-lg"
+                   formControlName="username"
+                   placeholder="Username"
+                   type="text">
+          </fieldset>
+          <fieldset class="form-group">
+            <input class="form-control w-full py-3 px-4 text-lg border border-gray-300 rounded-lg"
+                   formControlName="email"
+                   placeholder="Email"
+                   type="text">
+          </fieldset>
+          <fieldset class="form-group">
+            <input class="form-control w-full py-3 px-4 text-lg border border-gray-300 rounded-lg"
+                   formControlName="password"
+                   placeholder="Password"
+                   type="password">
+          </fieldset>
+          <div class="flex justify-end">
+            <button class="px-6 py-3 text-lg bg-blue-500 text-white rounded-lg "
+                    type="submit">Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
